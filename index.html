@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+        <script src="Js/code.jquery.com_jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<audio id="clickaud">
+			<source src="mixkit-interface-click-1126.ogg" type="audio/ogg" />
+			<source src="mixkit-interface-click-1126.mp3" type="audio/mpeg" />
+		</audio>
+		<div class="calbody">
+			<div>
+				<input type="text" id="exp" placeholder="Enter the expression">
+			</div>
+			<br />
+			<br />
+			<div style="display: flex; flex-direction: column; gap: 1.2rem">
+				<div
+					style="
+						display: flex;
+						flex-direction: row;
+						gap: 1rem;
+						justify-content: center;
+					"
+				>
+					<button class="btn-gray" id="AC" >AC</button>
+					<button class="btn-gray" id="one" onclick="playAudio()"><sup>+</sup>/-</button>
+					<button class="btn-gray" onclick="playAudio()">%</button>
+					<button class="btn-orange" onclick="playAudio()" class="syb">
+						&#247;
+					</button>
+				</div>
+				<div
+					style="
+						display: flex;
+						flex-direction: row;
+						gap: 1rem;
+						justify-content: center;
+					"
+				>
+					<button class="btn-blk" onclick="playAudio()">7</button>
+					<button class="btn-blk" onclick="playAudio()">8</button>
+					<button class="btn-blk" onclick="playAudio()">9</button>
+					<button class="btn-orange" onclick="playAudio()">X</button>
+				</div>
+				<div
+					style="
+						display: flex;
+						flex-direction: row;
+						gap: 1rem;
+						justify-content: center;
+					"
+				>
+					<button class="btn-blk" onclick="playAudio()">4</button>
+					<button class="btn-blk" onclick="playAudio()">5</button>
+					<button class="btn-blk" onclick="playAudio()">6</button>
+					<button class="btn-orange" onclick="playAudio()">-</button>
+				</div>
+				<div
+					style="
+						display: flex;
+						flex-direction: row;
+						gap: 1rem;
+						justify-content: center;
+					"
+				>
+					<button class="btn-blk" onclick="playAudio()">1</button>
+					<button class="btn-blk" onclick="playAudio()">2</button>
+					<button class="btn-blk" onclick="playAudio()">3</button>
+					<button class="btn-orange" onclick="playAudio()">+</button>
+				</div>
+				<div
+					style="
+						display: flex;
+						flex-direction: row;
+						gap: 1rem;
+						justify-content: center;
+					"
+				>
+					<button class="btn-blk1" style="width: 9">0</button>
+					<button class="btn-blk">.</button>
+					<input type="submit" class="btn-orange" value="=" />
+				</div>
+			</div>
+		</div>
+		<script>
+			// var x = document.getElementById("clickaud");
+         
+			
+            // function clickAC()
+            // {
+            //     const display = getElementById('exp');
+            //     display.value="12";
+            //     console.log("press AC");
+            //     x.play();
+            // }
+
+			const AC = document.getElementById('AC');
+			AC.addEventListener('click',()=>
+			{
+				console("Click AC");
+			});
+
+
+        
+
+
+		</script>
+	</body>
+</html>
